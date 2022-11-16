@@ -1,7 +1,7 @@
 # counter_7
 
-Kenneth Ferdinand
-2106750282
+Kenneth Ferdinand <br>
+2106750282 <br>
 D
 
 ## Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget dan jelaskan perbedaan dari keduanya.
@@ -35,3 +35,37 @@ final dan const keduanya merupakan sebuah variable immutable. Const harus sudah 
 4. Tampilkan button untuk decrement dan setting stylingnya
 5. Atur styling untuk semua component
 
+## Tugas 8
+
+##  Jelaskan perbedaan Navigator.push dan Navigator.pushReplacement.
+
+Navigator.push menambah rute ke dalam stack di page yang sedang dilihat. Semetara, Navigator.pushReplacement mengganti page sekarang dengan rute yang ingin kita push.
+
+## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+
+- Material App : Berguna sebagai root dari sebuah aplikasi
+- Scaffold : Berguna menjadi struktur dasar suatu aplikasi 
+- Text : Berguna untuk mendisplay string dalam satu baris
+- AppBar : Berguna untuk display toolbar widgets 
+- Padding : Berguna untuk memberikan padding
+- SizedBox : Berguna untuk sebagai box yang bisa diatur ukurannya
+- Form : Berguna untuk menjadi formulir
+- Container : Berguna untuk menggabungkan suatu elemen, menentukan posisi dan ukuran
+- Column : Berguna untuk display child dalam format vertikal
+
+##  Sebutkan jenis-jenis event yang ada pada Flutter (contoh: onPressed).
+
+- onPressed
+- onTap
+- onChanged
+
+## Jelaskan bagaimana cara kerja Navigator dalam "mengganti" halaman dari aplikasi Flutter.
+
+Navigator yang ada pada Flutter mengimplementasikan ide stack. Navigator menyediakan method untuk mengubah tunpukan dengan push atau pop. Navigator.push untuk menavigasi ke halaman baru dan navigator.pop berguna untuk kembali dari halaman sekarang
+
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+
+1. Tambahkan drawer atau hamburger pada aplikasi dengan 3 navigasi
+2. Buat form untuk bisa menerima String, Integer, pilihan dan tanggal
+3. Tambahkan button save
+4. Buat function untuk mengirim data agar bisa ditampilkan pada budget data
