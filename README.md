@@ -69,3 +69,48 @@ Navigator yang ada pada Flutter mengimplementasikan ide stack. Navigator menyedi
 2. Buat form untuk bisa menerima String, Integer, pilihan dan tanggal
 3. Tambahkan button save
 4. Buat function untuk mengirim data agar bisa ditampilkan pada budget data
+
+## Tugas 9
+
+## Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+
+Bisa. Kita dapat serialization secara manual yaitu dengan cara memanfaatkan built-in JSON decoder dari dart:convert. Kita bisa passing raw JSON String ke jsonDecode(), kemudian hasilnya akan tertera pada Map<String, dynamic>. Pembuatan model akan lebih baik sebelum melakukan pengambilan data JSON, karena jika kita mengambil banyak akan lebih mudah error dan susah untuk di manage, jika JSON field typo / tidak ada maka aka terjadi error saat runtime.
+
+##  Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+
+- Material App : Berguna sebagai root dari sebuah aplikasi
+- Scaffold : Berguna menjadi struktur dasar suatu aplikasi 
+- Text : Berguna untuk mendisplay string dalam satu baris
+- AppBar : Berguna untuk display toolbar widgets 
+- Padding : Berguna untuk memberikan padding
+- Drawer : Berguna sebagai seperti sebuah navigation ke page tertentu yang ada di samping layar
+- ListView : Berguna untuk mendisplay children satu persatu dalam scrolling direction
+- SizedBox : Berguna untuk sebagai box yang bisa diatur ukurannya
+- Container : Berguna untuk menggabungkan suatu elemen, menentukan posisi dan ukuran
+- Column : Berguna untuk display child dalam format vertikal
+
+## Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+
+1. Melakukan penambahan dependency http ke proyek, dependency ini berguna untuk pertukaran data melalui HTTP request, seperti GET, POST, PUT, dan lain-lain.
+
+2. Melakukan pembuatan model sesuai dengan respons dari data yang berasal dari web service tersebut.
+
+3. Melakukan pembuatan http request ke web service menggunakan dependency http.
+
+4. Melakukan konversi objek yang didapatkan dari web service ke model yang telah kita buat di langkah kedua.
+
+5. Melakukan penampilan data yang telah dikonversi ke aplikasi dengan FutureBuilder.
+
+##  Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+
+1. Membuat page baru yang nantinya akan ditambahkan ke drawer untuk watchlist
+
+2. Pembuatan model yang sesuai untuk data JSON mywathlist
+
+3. Pembuatan function untuk fetch data JSON
+
+4. Tampilkan data pada widget
+
+5. Membuat page detail untuk data
+
+
